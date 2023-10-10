@@ -1,28 +1,22 @@
 #include "main.h"
 
 /**
- * Federal agent  jack_bauer - prints every minute of the day of Jack Bauer
- * starting from 00:00 to 23:59
+ * jack_bauer - Prints every minute of the day of Jack Bauer.
  */
 void jack_bauer(void)
 {
-	int i, j;
+    int hours, minutes;
 
-	i = 0;
-
-	while (i < 24)
-	{
-		j = 0;
-		while (j < 60)
-		{
-			_putchar((i / 10) + '0');
-			_putchar((i % 10) + '0');
-			_putchar(':');
-			_putchar((j / 10) + '0');
-			_putchar((j % 10) + '0');
-			_putchar('\n');
-			j++;
-		}
-		i++;
-	}
+    for (hours = 0; hours < 24; hours++)
+    {
+        for (minutes = 0; minutes < 60; minutes++)
+        {
+            _putchar((hours / 10) + '0');
+            _putchar((hours % 10) + '0');
+            _putchar(':');
+            _putchar((minutes / 10) + '0');
+            _putchar((minutes % 10) + '0');
+            _putchar('\n');
+        }
+    }
 }
