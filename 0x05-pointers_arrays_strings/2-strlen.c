@@ -12,3 +12,11 @@ void _puts(char *str)
 	}
 	_putchar('\n');
 }
+
+int main ()
+{
+	char myString [] = " Testing my first string!";
+	_puts(myString);
+
+	return 0;
+}
