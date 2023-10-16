@@ -1,22 +1,18 @@
-#include main.h
+#include "main.h"
 /**
- * _puts -prints a string, followed by a new line, to stdout
- * @str: string to print
+ * _strlen - returns the length of a string
+ * @s: string
+ * Return: length
  */
-void _puts(char *str)
+int _strlen(char *s)
 {
-	while (*str != '\0')
+	int longi = 0;
+
+	while (*s != '\0')
 	{
-	_putchar(*str);
-	*str++;
+		longi++;
+		s++;
 	}
-	_putchar('\n');
-}
 
-int main ()
-{
-	char myString [] = " Testing my first string!";
-	_puts(myString);
-
-	return 0;
+	return (longi);
 }
