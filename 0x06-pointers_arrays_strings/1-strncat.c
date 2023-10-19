@@ -6,7 +6,7 @@
  * @dest: is a input value
  * @src : is a input value
  * @n: input value
- * return : dest
+ *  Return: a pointer to the destination buffer (dest)
  */
 char *_strncat(char *dest, char *src, int n);
 {
